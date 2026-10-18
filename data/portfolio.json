@@ -1,0 +1,77 @@
+{
+  "developer": {
+    "name": "Muhammad Afzal Soomro",
+    "title": "Full-Stack Developer",
+    "summary": "Full-stack developer focused on building responsive web applications, backend APIs, and modern user experiences using TypeScript, Next.js, and Node.js. Dedicated to clean architecture, reliable data flow, and practical problem solving.",
+    "location": "Pakistan",
+    "contact": {
+      "email": "soomroyasir81@gmail.com"
+    }
+  },
+  "skills": [
+    {
+      "category": "Core & Languages",
+      "items": ["TypeScript", "JavaScript", "HTML5", "CSS3", "SQL"]
+    },
+    {
+      "category": "Frontend Development",
+      "items": ["React", "Next.js", "Tailwind CSS", "Responsive UI/UX", "State Management"]
+    },
+    {
+      "category": "Backend & APIs",
+      "items": ["Node.js", "RESTful APIs", "API Design & Integration", "Server-Side Logic"]
+    },
+    {
+      "category": "Tools & Workflow",
+      "items": ["Git & GitHub", "Component Architecture", "Performance Optimization", "Vercel / Cloud Run"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "zentrix-store",
+      "title": "Zentrix Store",
+      "status": "completed",
+      "statusLabel": "Completed",
+      "summary": "Full-stack e-commerce web platform engineered for modern online retail. Features an intuitive product browsing experience, responsive product detail pages, client-side cart state management, and optimized checkout flow.",
+      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST APIs"],
+      "highlights": [
+        "Dynamic product filtering and category-based catalog browsing",
+        "Persistent cart interactions with real-time total calculations",
+        "Fully responsive mobile-to-desktop layout with accessible controls"
+      ],
+      "architectureNotes": "Built using Next.js with component modularity separating UI presentation from cart state logic. Utilizes Tailwind CSS for adaptive styling across all device viewports."
+    },
+    {
+      "id": "real-estate-api",
+      "title": "Real Estate Lead Management API",
+      "status": "in_progress",
+      "statusLabel": "In Progress",
+      "summary": "Specialized backend REST API service designed for real estate lead intake, validation, qualification, and routing. Streamlines incoming property inquiries and manages lead life cycles for agent handoff.",
+      "technologies": ["Node.js", "TypeScript", "RESTful Architecture", "Input Validation", "Data Modeling"],
+      "highlights": [
+        "Standardized lead ingestion endpoints with strict payload validation",
+        "Status tracking workflow (New, Contacted, Qualified, Closed)",
+        "Automated routing logic based on agent availability and property criteria"
+      ],
+      "architectureNotes": "Under active development. Focuses on decoupled route controllers, robust request schema validation, and structured error propagation."
+    }
+  ],
+  "frequentlyAsked": [
+    {
+      "question": "What are your core technical strengths?",
+      "topic": "skills"
+    },
+    {
+      "question": "Tell me about the Zentrix Store project.",
+      "topic": "zentrix-store"
+    },
+    {
+      "question": "What is the status of the Real Estate Lead Management API?",
+      "topic": "real-estate-api"
+    },
+    {
+      "question": "How can I contact Muhammad Afzal Soomro?",
+      "topic": "contact"
+    }
+  ]
+}

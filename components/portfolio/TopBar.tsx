@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Mail, MessageSquare } from 'lucide-react';
 
 interface TopBarProps {
@@ -11,12 +12,20 @@ export function TopBar({ onOpenAssistantMobile }: TopBarProps) {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-800 bg-[#0B0F17]/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
-        {/* Zone 1: Brand wordmark (single text element) */}
+        {/* Zone 1: Brand wordmark with portrait avatar */}
         <a
           href="#top"
-          className="text-base font-semibold tracking-tight text-white hover:text-blue-400 transition-colors whitespace-nowrap shrink-0"
+          className="flex items-center gap-2.5 text-base font-semibold tracking-tight text-white hover:text-blue-400 transition-colors whitespace-nowrap shrink-0"
         >
-          Muhammad Afzal Soomro
+          <Image
+            src="/developer-portrait.jpg"
+            alt="Muhammad Afzal Soomro"
+            width={28}
+            height={28}
+            className="w-7 h-7 rounded-full object-cover border border-slate-700/80 shrink-0"
+            referrerPolicy="no-referrer"
+          />
+          <span>Muhammad Afzal Soomro</span>
         </a>
 
         {/* Zone 2: Navigation Links (single-line text links) */}

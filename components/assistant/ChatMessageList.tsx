@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { portfolioData } from '@/lib/portfolio-schema';
-import { Bot, User, ArrowUpRight, AlertCircle, RefreshCw } from 'lucide-react';
+import { User, ArrowUpRight, AlertCircle, RefreshCw } from 'lucide-react';
 
 export interface ChatMessage {
   id: string;
@@ -69,13 +70,24 @@ export function ChatMessageList({
           >
             {/* Avatar */}
             <div
-              className={`flex items-center justify-center w-6 h-6 rounded-full shrink-0 text-[11px] ${
+              className={`flex items-center justify-center w-6 h-6 rounded-full shrink-0 overflow-hidden text-[11px] ${
                 isUser
                   ? 'bg-blue-600 text-white'
-                  : 'bg-slate-800 border border-slate-700 text-blue-400'
+                  : 'bg-slate-800 border border-slate-700'
               }`}
             >
-              {isUser ? <User className="w-3.5 h-3.5" /> : <Bot className="w-3.5 h-3.5" />}
+              {isUser ? (
+                <User className="w-3.5 h-3.5" />
+              ) : (
+                <Image
+                  src="/developer-portrait.jpg"
+                  alt="Muhammad Afzal Soomro"
+                  width={24}
+                  height={24}
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              )}
             </div>
 
             {/* Bubble */}
@@ -125,8 +137,15 @@ export function ChatMessageList({
       {/* Loading Indicator */}
       {isLoading && (
         <div className="flex items-start gap-2.5">
-          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-800 border border-slate-700 text-blue-400 shrink-0">
-            <Bot className="w-3.5 h-3.5" />
+          <div className="flex items-center justify-center w-6 h-6 rounded-full overflow-hidden bg-slate-800 border border-slate-700 shrink-0">
+            <Image
+              src="/developer-portrait.jpg"
+              alt="Muhammad Afzal Soomro"
+              width={24}
+              height={24}
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div className="bg-slate-900/90 border border-slate-800 rounded-2xl rounded-tl-none px-4 py-3 shadow-sm flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />

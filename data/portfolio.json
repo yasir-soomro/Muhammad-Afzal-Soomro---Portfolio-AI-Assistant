@@ -4,6 +4,7 @@
     "title": "Full-Stack Developer",
     "summary": "Full-stack developer focused on building responsive web applications, backend APIs, and modern user experiences using TypeScript, Next.js, and Node.js. Dedicated to clean architecture, reliable data flow, and practical problem solving.",
     "location": "Pakistan",
+    "avatar": "/developer-portrait.jpg",
     "contact": {
       "email": "soomroyasir81@gmail.com"
     }

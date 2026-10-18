@@ -11,6 +11,7 @@ export interface DeveloperProfile {
   title: string;
   summary: string;
   location?: string;
+  avatar?: string;
   contact: DeveloperContact;
 }
 

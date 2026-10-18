@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Bot, RotateCcw, X, ShieldCheck } from 'lucide-react';
+import Image from 'next/image';
+import { RotateCcw, X, ShieldCheck } from 'lucide-react';
 import { ChatMessageList, ChatMessage } from './ChatMessageList';
 import { PromptChips } from './PromptChips';
 import { ChatInput } from './ChatInput';
@@ -30,8 +31,15 @@ export function AssistantPanel({
       {/* Panel Header */}
       <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-800/80">
         <div className="flex items-center gap-2.5">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-blue-950/60 border border-blue-800/50 text-blue-400">
-            <Bot className="w-4 h-4" />
+          <div className="relative flex items-center justify-center w-8 h-8 rounded-lg overflow-hidden border border-slate-700/80 shrink-0">
+            <Image
+              src="/developer-portrait.jpg"
+              alt="Muhammad Afzal Soomro"
+              width={32}
+              height={32}
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div>
             <div className="flex items-center gap-1.5">
